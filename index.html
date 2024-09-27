@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Prediction System</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Flood Prediction System</h1>
+        <p>Enter your location to check flood prediction based on historical data</p>
+    </header>
+
+    <main>
+        <section id="location-input">
+            <h2>Enter Location</h2>
+            <form id="locationForm">
+                <label for="location">Location (City, Region):</label>
+                <input type="text" id="location" placeholder="Enter your location" required>
+                <button type="button" onclick="checkFloodPrediction()">Check Prediction</button>
+            </form>
+        </section>
+
+        <section id="prediction-result">
+            <h2>Prediction Result</h2>
+            <div id="prediction-output">
+                <!-- Prediction result will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flood Prediction System</p>
+    </footer>
+</body>
+</html>
